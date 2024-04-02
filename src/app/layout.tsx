@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans } from "next/font/google";
 import './globals.css'
-import { Providers } from "@/components/redux/provider";
+import { Providers } from "../redux/provider";
 import Navbar from './components/Navbar';
    
 //font we'll use throughout the project
@@ -20,7 +20,7 @@ export default function RootLayout({
  }) {
    return (
       <html lang="en" className={pjs.className}>
-        <body>
+        <body className='pb-24 h-screen overflow-hidden'>
           <Providers>
             <Navbar />
             {children}
